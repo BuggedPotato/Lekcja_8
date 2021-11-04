@@ -15,7 +15,7 @@ app.use( cookieParser() );
 app.use(expressSession({
     secret: 'davaimochii',
     saveUninitialized:true,
-    cookie: { maxAge: 1000 * 10 }, // maxAge = 10 minut
+    cookie: { maxAge: 1000 * 60 * 10 }, // maxAge = 10 minut
     resave: false 
   }));
 
