@@ -16,6 +16,7 @@ body{
 {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     padding: 20px;
     margin: 0;
     width: calc( 100% - 40px );
@@ -142,4 +143,13 @@ body{
 }
 #loginBox *{
     font-size: 20pt;
+}
+
+#logout button{
+    display: block;
+    border: 2px #996300 solid;
+    border-radius: 8px;
+    font-size: 16pt;
+    background-color: rgb(246, 228, 121);
+    color: #994d00;
 }
