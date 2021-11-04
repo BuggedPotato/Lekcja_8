@@ -1,0 +1,14 @@
+{{>navbar}}
+<div id="gridCon">
+    <div id="leftColumn">
+        <h2>file info</h2>
+    </div>
+    <div id="rightColumn" style="flex-flow: column; padding: 20px; justify-content: start;">
+        {{#each info}}
+            <div style="display: flex; align-items: center;">
+                <h2 style="color: #4e310b">{{@key}}:</h2>
+                <h3 style="color: #5c5c5c">{{this}}</h3>
+            </div>
+        {{/each}}
+    </div>
+</div>

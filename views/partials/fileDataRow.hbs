@@ -1,0 +1,12 @@
+<tr>
+    <form method="post">
+        <td>{{id}}</td>
+        <td><span class="fiv-viv {{getImage name}} fiv-icon-blank"></span></td>
+        <td>{{trimName name}}</td>             
+        <td>{{size}}</td>
+        <td>{{type}}</td>
+        <td><button class="btnTable" formaction="/delete" type="submit" name="delete" value={{id}} >DELETE</button></td>
+        <td><button class="btnTable" formaction="/info" type="submit" name="info" value={{id}} >INFO</button></td>
+        <td><button class="btnTable" formaction="/download" type="submit" name="download" value='{{path}}' >DOWNLOAD</button></td>
+    </form>
+</tr>

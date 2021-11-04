@@ -1,0 +1,27 @@
+{{>navbar}}
+<div id="gridCon">
+    <div id="leftColumn">
+        <h2>filemanager</h2>
+        <form method="post">
+            <button class="btnTable" formaction="/reset" type="submit" name="reset" value="reset" >USUŃ&nbsp;DANE O PLIKACH Z TABLICY</button>
+        </form>
+    </div>
+    <div id="rightColumn">
+        <table id="table" cellspacing='0'>
+            <thead id="tableHead">
+                <tr>
+                    {{#each fileTable}}
+                        <td>
+                            <h2>{{this}}</h2>
+                        </td>
+                    {{/each}}
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                {{#each files}}
+                    {{>fileDataRow this}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
